@@ -1,0 +1,24 @@
+{
+  "name": "dimns/moneytimer",
+  "description": "Web-приложение для подсчёта времени затраченного на проект",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitrii Shcherbakov",
+      "email": "info@bestion.ru",
+      "homepage": "http://bestion.ru",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MicroSPA\\App\\": "app/"
+    }
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "ext-pdo": "*",
+    "dimns/microspa-core": "~1.0.0"
+  }
+}

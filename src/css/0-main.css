@@ -1,0 +1,7 @@
+/*
+ * Необходим хотя бы один не пустой css-файл
+ */
+
+.lightajax__loader--color {
+    color: #fff;
+}

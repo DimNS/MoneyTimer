@@ -1,0 +1,8 @@
+.idea
+node_modules
+public/assets
+public/index.html
+vendor
+composer.lock
+package-lock.json
+rev-manifest.json

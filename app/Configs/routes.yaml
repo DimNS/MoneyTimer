@@ -1,0 +1,6 @@
+example-get:
+  path: /example/{id}
+  controller: 'MicroSPA\App\Web\Example\ControllerGet'
+  methods: [GET, OPTIONS]
+  requirements:
+    id: '\d+'
