@@ -12,7 +12,10 @@
     "jsonfile": "^4.0.0"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "dimns-is-empty-js": "^1.1.1",
     "jquery": "^3.3.1",
-    "jquery-lightajax": "^2.0.0"
+    "jquery-lightajax": "^2.0.0",
+    "template7": "^1.4.1"
   }
 }

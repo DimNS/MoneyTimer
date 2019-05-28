@@ -10,6 +10,16 @@ var del        = require('del');              // Удаление файлов
 
 // YOUR TASKS
 
+function bootstrap() {
+    var list = [
+        'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    ];
+
+    return gulp.src(list)
+        .pipe(gulp.dest('public/assets/plugins/bootstrap'));
+}
+
 function jqueryLightAjax() {
     var list = [
         'node_modules/jquery-lightajax/dist/jquery.lightajax.min.css',
@@ -22,7 +32,9 @@ function jqueryLightAjax() {
 
 function others(done) {
     var list = [
-        'node_modules/jquery/dist/jquery.min.js'
+        'node_modules/dimns-is-empty-js/dist/isEmpty.min.js',
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/template7/dist/template7.min.js'
     ];
 
     if (list.length > 0) {
@@ -34,6 +46,7 @@ function others(done) {
 }
 
 var plugins = gulp.parallel(
+    bootstrap,
     jqueryLightAjax,
     others
 );
