@@ -2,7 +2,7 @@
 /**
  * Параметры БД
  *
- * @version 21.05.2019
+ * @version 28.05.2019
  * @author  Дмитрий Щербаков <atomcms@ya.ru>
  */
 
@@ -31,7 +31,7 @@ class SettingsDatabase
      *
      * @var string
      */
-    const SQLITE_FILE = SettingsPath::ROOT . 'database.sqlite';
+    const SQLITE_FILE = SettingsPath::ROOT . 'database.sqlite3';
 
     /**
      * Имя источника данных

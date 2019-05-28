@@ -4,5 +4,6 @@ public/assets
 public/index.html
 vendor
 composer.lock
+database.sqlite3
 package-lock.json
 rev-manifest.json
