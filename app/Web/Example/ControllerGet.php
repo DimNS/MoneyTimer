@@ -2,13 +2,14 @@
 /**
  * Возвращение переданного параметра
  *
- * @version 19.05.2019
+ * @version 28.05.2019
  * @author  Дмитрий Щербаков <atomcms@ya.ru>
  */
 
 namespace MicroSPA\App\Web\Example;
 
 use MicroSPA\Core\Abstracts\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class ControllerGet
@@ -20,7 +21,9 @@ class ControllerGet extends Controller
     /**
      * Стартовый метод
      *
-     * @version 19.05.2019
+     * @return Response
+     *
+     * @version 28.05.2019
      * @author  Дмитрий Щербаков <atomcms@ya.ru>
      */
     public function start()
@@ -30,6 +33,7 @@ class ControllerGet extends Controller
         );
 
         $this->response->setData($result);
-        $this->response->send();
+
+        return $this->response;
     }
 }
