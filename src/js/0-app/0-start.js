@@ -1,7 +1,7 @@
 /**
  * Загрузочный скрипт приложения
  *
- * @version 19.05.2019
+ * @version 28.05.2019
  * @author  Дмитрий Щербаков <atomcms@ya.ru>
  */
 
@@ -31,10 +31,12 @@ app.lightajax = new LightAjax();
  *
  * @type {function}
  *
- * @version 19.05.2019
+ * @version 28.05.2019
  * @author  Дмитрий Щербаков <atomcms@ya.ru>
  */
 app.init = function () {
+    app.initJqueryRemoveClassWild();
+
     $('#js-app-result').text('Приложение успешно запущено');
 };
 
