@@ -2,7 +2,7 @@
 /**
  * Параметры БД
  *
- * @version 19.05.2019
+ * @version 21.05.2019
  * @author  Дмитрий Щербаков <atomcms@ya.ru>
  */
 
@@ -31,7 +31,16 @@ class SettingsDatabase
      *
      * @var string
      */
-    const PDO_DSN = 'sqlite:' . SettingsPath::ROOT . 'database.sqlite';
+    const SQLITE_FILE = SettingsPath::ROOT . 'database.sqlite';
+
+    /**
+     * Имя источника данных
+     *   MySQL: mysql:host=hostname;port=portnum;dbname=databasename
+     *   SQLite: sqlite:path/to/database/file
+     *
+     * @var string
+     */
+    const PDO_DSN = 'sqlite:' . SettingsDatabase::SQLITE_FILE;
 
     /**
      * Имя пользователя
